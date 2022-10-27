@@ -25,7 +25,7 @@
 
         <div class="form-group">
             <label for="course-select">Select Course</label>
-            <select class="form-control" id="course-select" onchange="createTable()"></select>
+            <select class="form-control" id="course-select" onchange="changeTable(value)"></select>
             <label for="teeBox-select">Select TeeBox</label>
             <select class="form-control" id="tee-box-select"></select>
         </div>
@@ -33,7 +33,7 @@
         <div class="row" id="scorecard-container">
             <div class="col-lg-12" id="scorecard">
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table" id="table">
                         <tr id="hole-row">
                             <th id="hole">Hole</th>
                         </tr>
@@ -49,6 +49,30 @@
                     </table>
                   </div>
             </div>
+        </div>
+
+        <div>
+            <input id="new-list-name-input" placeholder="Player's Name"><br><br>
+            <input id="score1" type="number" placeholder="hole 1">
+            <input id="score2" type="number" placeholder="hole 2">
+            <input id="score3" type="number" placeholder="hole 3">
+            <input id="score4" type="number" placeholder="hole 4">
+            <input id="score5" type="number" placeholder="hole 5">
+            <input id="score6" type="number" placeholder="hole 6">
+            <input id="score7" type="number" placeholder="hole 7">
+            <input id="score8" type="number" placeholder="hole 8">
+            <input id="score9" type="number" placeholder="hole 9">
+            <input id="score10" type="number" placeholder="hole 10">
+            <input id="score11" type="number" placeholder="hole 11">
+            <input id="score12" type="number" placeholder="hole 12">
+            <input id="score13" type="number" placeholder="hole 13">
+            <input id="score14" type="number" placeholder="hole 14">
+            <input id="score15" type="number" placeholder="hole 15">
+            <input id="score16" type="number" placeholder="hole 16">
+            <input id="score17" type="number" placeholder="hole 17">
+            <input id="score18" type="number" placeholder="hole 18">
+            <br><br>
+            <button class="btn btn-primary" onclick="addList()">Create New Player</button>
         </div>
     </div>
 </body>
